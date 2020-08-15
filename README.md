@@ -48,3 +48,10 @@
 
 &emsp;&emsp;经200epoch的训练后，准确率和召回率都达到了92%左右，受制于数据采集环境过于单调，应该算是达到了一个还不错的目标。
 ![results](https://github.com/Rocky-17/Blog_illustration/blob/master/Helmet/results.png?raw=true)
+
+
+
+
+## 下载
+&emsp;&emsp;数据集、训练好的模型以及测试视频下载：链接：https://pan.baidu.com/s/1vug_9hSYEvGDEU9AWXEA8A 
+提取码：f0sq
