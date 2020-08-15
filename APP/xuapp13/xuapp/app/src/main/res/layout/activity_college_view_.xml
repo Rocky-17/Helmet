@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".College.College_view_Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="智慧教室"
+        android:textSize="25sp"
+        android:textColor="#5BBCE7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F3F3F3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#404040"
+                android:gravity="center"
+                android:text="班级：1606  签到：42/47 专注：35/42"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp" />
+
+            <WebView
+                android:id="@+id/college_new_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F3F3F3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_type"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:background="@drawable/color_sty"
+                android:button="@null"
+                android:gravity="center"
+                android:text="类型"
+                />
+
+            <RadioButton
+                android:id="@+id/btn_state"
+                android:layout_width="69dp"
+                android:layout_height="30dp"
+                android:background="@drawable/color1"
+                android:checked="true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="状态"
+                android:textColor="@drawable/color_word"/>
+
+            <RadioButton
+                android:id="@+id/btn_exp"
+                android:layout_width="69dp"
+                android:layout_height="30dp"
+                android:background="@drawable/color1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="表情"
+                android:textColor="@drawable/color_word"/>
+
+            <EditText
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
+
+            <Button
+                android:id="@+id/btn_seh"
+                android:layout_width="69dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-8dp"
+                android:background="#FFFFFF"
+                android:text="搜索"/>
+
+        </RadioGroup>
+
+        <GridView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"></GridView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发送"
+            />
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="号码："/>
+        <EditText
+            android:id="@+id/EditText02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="信息内容："/>
+
+    </LinearLayout>
+
+</LinearLayout>

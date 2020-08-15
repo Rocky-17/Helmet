@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/teacher_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级  16物联网  |"/>
+        <TextView
+            android:id="@+id/teacher_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  日期  11月21日  |"/>
+        <TextView
+            android:id="@+id/teacher_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  时间  11：46"/>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/teacher_video2"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="#404040"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#d4d444"
+                android:text="班级人数：47人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/teacher_sign"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00898c"
+                android:text="签到人数：41人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#363679"
+                android:text="迟到人数：0人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/teacher_queqin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#585fa3"
+                android:text="缺勤人数：2人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/teacher_focus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#cdcde9"
+                android:text="专注人数：32人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#b0dcde"
+                android:text="非专注人数：8人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#eab8bf"
+                android:text="睡觉人数：2人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f9c89f"
+                android:text="其他人数：4人"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/teacher_bottom_btn"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_des"
+        android:text="查看班级详情"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dafafafa"
+        android:layout_below="@id/main_head"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/ic_launcher8" />
+
+        <TextView
+            android:id="@+id/my_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:text="@string/shiyan"
+            android:textColor="#000000"/>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/my_tv1">
+    <RadioGroup
+        android:id="@+id/kecheng"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/jw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:gravity="center"
+            android:text="计网" />
+
+        <RadioButton
+            android:id="@+id/yjs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="云计算" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/sex"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/nan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:gravity="center"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/nv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="女" />
+    </RadioGroup>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/main_iv_choose"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="5"
+                app:srcCompat="@mipmap/ic_launcher2" />
+
+            <ImageView
+                android:id="@+id/main_iv_scan"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="5"
+                android:layout_marginBottom="30dp"
+                app:srcCompat="@mipmap/ic_launcher3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

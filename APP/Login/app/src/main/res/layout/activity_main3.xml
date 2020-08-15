@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/tv_tou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实时在场"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/Linear_jietu"
+        android:layout_width="320dp"
+        android:layout_height="230dp"
+        android:orientation="horizontal"
+        android:background="#555555"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tv_tou"
+        >
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Linear_jietu"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="15dp"
+            android:text="天津韵达检查施工现场"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地点：天津市西青区滨水西道393号延长线"
+            android:textSize="16sp"
+            android:textColor="#3C3C3C"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_nowp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="当前工人:"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/et_nowp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/tv_nowp"
+            android:text="30"
+            android:textColor="#2BD5D5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_nowrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addr"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/et_nowp"
+            android:text="人"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_weidao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addr"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:text="未到工人:"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/tv_nowrs"/>
+
+        <TextView
+            android:id="@+id/et_weidaop"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/tv_weidao"
+            android:text="3"
+            android:textColor="#D60831"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_weidaors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addr"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/et_weidaop"
+            android:text="人"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#D2D5D7"
+            android:layout_below="@id/et_weidaop"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:id="@+id/tv_l2_xianchang1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="现场提醒"
+                android:textSize="16sp"
+                android:textColor="#4ED39E"
+                android:background="@drawable/bg_tylv"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"/>
+            <TextView
+                android:id="@+id/tv_l2_xianchang2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="现场提醒"
+                android:textSize="16sp"
+                android:textColor="#4ED39E"
+                android:background="@drawable/bg_tylv"
+                android:gravity="center"
+                android:layout_marginLeft="80dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/linear2"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/tv_l2_yuancheng1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="远程纠正"
+                android:textSize="16sp"
+                android:textColor="#39A2E9"
+                android:background="@drawable/bg_tylan"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                />
+            <TextView
+                android:id="@+id/tv_l2_yuancheng2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="远程纠正"
+                android:textSize="16sp"
+                android:textColor="#39A2E9"
+                android:background="@drawable/bg_tylan"
+                android:gravity="center"
+                android:layout_marginLeft="80dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/linear3"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/tv_l2_yuancheng3"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="远程纠正"
+                android:textSize="16sp"
+                android:textColor="#F1AB41"
+                android:background="@drawable/bg_ty"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                />
+            <TextView
+                android:id="@+id/tv_l2_yuancheng4"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="远程纠正"
+                android:textSize="16sp"
+                android:textColor="#F1AB41"
+                android:background="@drawable/bg_ty"
+                android:gravity="center"
+                android:layout_marginLeft="80dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linear4"
+            android:src="@drawable/imv5"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.StudentNowFragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_gravity="center"> //设置右侧滑动条有无
+
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+         android:background="#ffffff"
+         >
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="18dp"
+             android:background="#ffffff"/>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="50dp">
+             <Button
+                 android:id="@+id/stu_home_btn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/bt_jump_pre"
+                 android:text="回到首页"
+                 android:textColor="#000000"/>
+             <TextView
+                 android:id="@+id/stu_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="2019 年 11 月 14 日"
+                 android:textSize="18sp"
+                 android:textColor="#595959"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="12dp"/>
+                 <Button
+                 android:id="@+id/stu_history_btn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/bt_jump_next"
+                 android:layout_alignParentRight="true"
+                 android:text="查看历史"
+                 android:textColor="#000000" />
+         </RelativeLayout>
+
+
+         <LinearLayout
+             android:id="@+id/student_des"
+             android:layout_width="match_parent"
+             android:layout_height="38dp"
+             android:orientation="horizontal"
+             android:layout_marginTop="0dp"
+             android:layout_marginBottom="6dp">
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:orientation="vertical"
+                 android:gravity="right"
+                 android:paddingRight="5dp"
+                 >
+
+                 <TextView
+                     android:id="@+id/stu_tv_name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight="1"
+                     android:text="姓名 : 韩宇臻"
+                     android:textColor="#595959"/>
+                 <TextView
+                     android:id="@+id/stu_tv_course"
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight="1"
+                     android:text="课程 : 云计算与物联网"
+                     android:textColor="#595959"/>
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="#ffffff"
+                 android:orientation="vertical"
+                 >
+
+                 <TextView
+                     android:id="@+id/stu_tv_class"
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight="1"
+                     android:text="|  班级 : 16物联网"
+                     android:textColor="#595959"/>
+                 <TextView
+                     android:id="@+id/stu_tv_classroom"
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight="1"
+                     android:text="|  教室 : 劝学楼B区214"
+                     android:textColor="#595959"/>
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="#000000"
+                android:orientation="vertical">
+
+              <LinearLayout
+                  android:id="@+id/stu_left"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="#6e81b9"
+                      android:orientation="vertical"
+                      android:gravity="center">
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="签到情况"
+                          android:textColor="#ffffff"
+                          android:layout_marginBottom="10dp"></TextView>
+                      <TextView
+                          android:id="@+id/stu_sign"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="未签到"
+                          android:textSize="36sp"
+                          android:textColor="#ffffff"></TextView>
+                  </LinearLayout>
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:background="#412f80"
+                      android:orientation="vertical">
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:orientation="horizontal">
+                          <TextView
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:text="你的状态"
+                              android:textColor="#ffffff"
+                              android:gravity="center"/>
+                          <ImageView
+                              android:id="@+id/stu_iv1"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              />
+                      </LinearLayout>
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:orientation="horizontal">
+                          <TextView
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:text="你的表情"
+                              android:textColor="#ffffff"
+                              android:gravity="center"/>
+
+                          <ImageView
+                              android:id="@+id/stu_iv2"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                               />
+                      </LinearLayout>
+                  </LinearLayout>
+
+              </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stu_right"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#b6007a"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="上课时长"
+                        android:textColor="#ffffff"
+                        android:paddingTop="10dp"/>
+                    <TextView
+                        android:id="@+id/stu_classtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="100分钟"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="专注时长"
+                        android:textColor="#ffffff"
+                        android:paddingTop="10dp"/>
+                    <TextView
+                        android:id="@+id/stu_focustime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="90分钟"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#53b2c1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="综合评分"
+                            android:textColor="#ffffff"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/stu_score"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="87分"
+                            android:textColor="#ffffff"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="班级排名"
+                            android:textColor="#ffffff"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/stu_rank"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="12名"
+                            android:textColor="#ffffff"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="10dp"
+             android:background="@drawable/jianbian"
+             />
+
+         <Button
+             android:id="@+id/stu_forest_button"
+             android:layout_marginTop="10dp"
+             android:layout_gravity="center"
+             android:layout_width="180dp"
+             android:layout_height="30dp"
+             android:text="查看学习树苗"
+             android:textColor="#ffffff"
+             android:background="@drawable/bg_des"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/me"
+                android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="姓名：哈哈哈   综合排名：12"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="阅读:73次        排名:03"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

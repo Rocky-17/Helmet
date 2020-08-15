@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo">
+
+    <!-- android:versionCode="1" -->
+    <!-- android:versionName="1.0" > -->
+
+
+    <!-- <uses-sdk -->
+    <!-- android:minSdkVersion="19" -->
+    <!-- android:targetSdkVersion="28" /> -->
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:icon="@mipmap/iccs"
+        android:label="智慧教室呵护系统"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.HomePageActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".MyselfFragment" -->
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" /> -->
+        <activity
+            android:name=".activity.ForestActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".activity.HistoryActivity" />
+        <activity android:name=".activity.TeacherMainActivity" />
+        <activity android:name=".activity.Teacher_ListActivity" />
+        <activity android:name=".activity.CollegeActivity" />
+        <activity android:name=".College.College_view_Activity" />
+        <activity android:name=".Index.Index_student_Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Index.Index_teacher_Activity" />
+        <activity android:name=".Index.Index_college_Activity"></activity>
+    </application>
+
+</manifest>

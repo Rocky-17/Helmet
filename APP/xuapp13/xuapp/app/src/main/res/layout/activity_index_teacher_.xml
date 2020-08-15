@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Index.Index_teacher_Activity">
+
+    <LinearLayout
+        android:id="@+id/ver"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        >
+        <com.example.lenovo.utils.ImageBannerView
+            android:id="@+id/image_group"
+            android:layout_width="match_parent"
+            android:layout_height="360dp">
+
+        </com.example.lenovo.utils.ImageBannerView>>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+        <EditText
+            android:id="@+id/tea_edit1"
+            android:layout_marginTop="15dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+        <EditText
+            android:id="@+id/tea_edit2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_tea_signup"
+            android:layout_marginTop="25dp"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="教师端登录"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_des"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/txt_tea_register"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:text="注册"
+                android:textSize="18sp"
+                android:gravity="top|right"
+                />
+
+            <TextView
+                android:id="@+id/txt_tea_coll"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"
+                android:gravity="top|left"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="切换" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
